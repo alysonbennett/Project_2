@@ -18,6 +18,7 @@ CREATE TABLE user (
 CREATE TABLE pets (
 name
 age
+sex/spayed/neutered
 weight
 breed
 allergies
