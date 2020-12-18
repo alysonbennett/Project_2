@@ -6,13 +6,12 @@ USE happy_paws;
 
 CREATE TABLE user (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    username
-    password
-    name
-    phone
-    email
-    address
-    pet name foreign key
+    username VARCHAR (50) NOT NULL UNIQUE,
+    password VARCHAR (255) NOT NULL,
+    name VARCHAR (255) NOT NULL,
+    phone INT NOT NULL,
+    email VARCHAR (255) NOT NULL,
+    pet
 );
 
 CREATE TABLE pets (
