@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS happy_paws;
+
+CREATE DATABASE happy_paws;
