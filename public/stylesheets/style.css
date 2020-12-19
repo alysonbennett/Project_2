@@ -12,6 +12,11 @@ body {
   background-color: #ffe3cd;
 }
 
+/*Navbar*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+background-color: #c29783!important;
+}
+
 /*Main HTML*/
 form {
   width: 550px;
