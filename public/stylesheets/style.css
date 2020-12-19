@@ -12,7 +12,16 @@ body {
   background-color: #ffe3cd;
 }
 
-form.signup,
-form.login {
-  margin-top: 50px;
-}
+/*Main HTML*/
+form {
+  width: 550px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+ }
+
+ button.btn.btn-primary {
+  background-color: #b5e7f3;
+  color: black;
+  border-color: #b5e7f3;
+ }
