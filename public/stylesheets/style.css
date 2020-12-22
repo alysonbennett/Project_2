@@ -26,7 +26,25 @@ form {
  }
 
  button.btn.btn-primary {
-  background-color: #b5e7f3;
+  background-color: #ffcbdb;
   color: black;
   border-color: #b5e7f3;
+ }
+
+ /*Members HTML*/
+ 
+ div.card-body {
+   border-radius: 15px 50px;
+   background-color: #b5e7f3;
+   color: black;
+   width: 50%;
+  padding: 10px;
+ }
+
+ div.card {
+  border-radius: 15px 50px;
+   background-color: #b5e7f3;
+   color: black;
+   width: 50%;
+  padding: 10px;
  }
