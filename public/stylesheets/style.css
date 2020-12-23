@@ -74,3 +74,14 @@ div.card.logout {
  padding: 10px;
 
 }
+
+/*Sign Up Page*/
+
+div#id01.modal {
+background-color: #ffe3cd;
+}
+
+form.modal-content {
+  background-color: #ffe3cd;
+  border: none;
+}
