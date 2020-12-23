@@ -75,6 +75,10 @@ div.card.logout {
 
 }
 
+div.row {
+  background-color: #b5e7f3;
+}
+
 /*Sign Up Page*/
 
 div#id01.modal {
