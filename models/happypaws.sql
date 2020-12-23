@@ -41,4 +41,4 @@ INSERT INTO Pets (name, age, gender, weight, breed, energy, allergies, medicatio
 VALUES ("Frank", 8, "Male", 130, "Bullmastiff", 1, "everything", "a lot", "he's a great boy!");
 
 INSERT INTO Reservations (date, time)
-VALUES ("12/19/2020", "12:30:00");
+VALUES ("2020-12-22", "12:30:00");
