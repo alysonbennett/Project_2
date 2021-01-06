@@ -1,0 +1,30 @@
+
+      {{> messages}}
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <form action="/users/login" method="POST">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input id="password" type="password" name="password" class="form-control" placeholder="Enter Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="lead mt-4">
+        No Account? <a href="/users/register">Register</a>
+      </p>
+
+          </div>
+          <div class="col-sm">
+            <img src="/assets/images/pexels-chevanon-photography-1108099.jpg" class="img-fluid" alt="picture of puppy">
+          </div>
+      </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
