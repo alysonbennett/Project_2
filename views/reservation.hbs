@@ -1,0 +1,62 @@
+<style>
+  h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    background-color: #9af3f3;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+     .title {
+      margin-top: 24px;
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+        .input {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 0.778em 0.833em;
+    color: #363636;
+    width: 100%;
+    box-shadow: none;
+    font-size: 1.2em;
+    border-radius: 0;
+    border: 0;
+    line-height: 1.778em;
+    }
+    .section {
+      margin-top: -80px;
+    }
+    button.btn.btn-primary {
+        background-color: #ffcbdb;
+        border-radius: 5px;
+        margin-top: 18px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+</style>
+
+<h1>Come sniff us out, book your reservation today!</h1>
+
+<section class="section">
+  <div class="container">
+    <div id="calendar" style="overflow: auto"></div>
+  </div>
+</section>
+
+<form class="modal-content" action="/users/reservation" method="POST">
+          <div class="container"> 
+            <hr>
+            <label for="date" class="title"><b>Date</b></label>
+            <input id="date" class="input" type="DATE" placeholder="Date" name="date" required>
+      
+            <label for="time" class="title"><b>Time</b></label>
+            <input id="time" class="input" type="TIME" placeholder="Time" name="time" required>
+          </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="/js/calendar.js"></script>
