@@ -37,3 +37,4 @@ We started this project with brainstorming ideas for what we would want our appl
 ## Screen Shots of Final Application
 
 ## Video
+[![](http://img.youtube.com/vi/l8w4Qu3KbFo/0.jpg)](http://www.youtube.com/watch?v=l8w4Qu3KbFo "Happy Paws")
