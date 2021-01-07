@@ -11,6 +11,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: true })
  
 const app = express();
 const PORT = process.env.PORT || 3000;
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
