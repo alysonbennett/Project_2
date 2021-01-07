@@ -1,0 +1,128 @@
+
+<style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;
+        background-color: #ffe3cd;}
+
+    .container {background-color:#ffeeb3;
+    border-radius: 10px;
+    padding: 10px;
+    }
+
+        b {
+            background-color:#ffeeb3;
+        }
+
+        div.clearfix { background-color:#ffeeb3;
+
+        }
+
+    .title {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .input {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 0.778em 0.833em;
+    color: #363636;
+    width: 100%;
+    box-shadow: none;
+    font-size: 1em;
+    border-radius: 0;
+    border: 0;
+    line-height: 1.778em;
+    }
+
+  .card {
+    position: relative;
+      top: 120vh;    
+  }
+  
+  .header {
+    background-color:#79f6ec;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+
+    button.signupbtn {
+        background-color: #ffcbdb;
+        border-radius: 5px;
+        margin-top: 12px;
+        text-align: center;
+    }
+</style>
+      
+      {{!-- Card class causing for wierdness --}}
+      {{!-- <div class="card welcome">
+        <div class="card-body wel"> --}}
+      
+          <div class="row">
+          <div class="header">Tell us about your Pet!</div> 
+            <form class="modal-content" action="/users/dashboard" method="POST">
+          <div class="container"> 
+            <hr>
+            <label for="name" class="title"><b>Name</b></label>
+            <input id="name" class ="input" type="text" placeholder="Enter Name" name="name" required>
+      
+            <label for="age" class="title"><b>Age</b></label>
+            <input id="age" class ="input" type="integer" placeholder="Age" name="age" required>
+      
+            <label for="gender" class="title"><b>Gender</b></label>
+            <input id="gender" class ="input" type="text" placeholder="gender" name="gender" required>
+      
+            <label for="weight" class="title"><b>Weight</b></label>
+            <input id="weight" class ="input" type="integer" placeholder="weight" name="weight" required>
+
+            <label for="breed" class="title"><b>Breed</b></label>
+            <input id="breed" class ="input" type="text" placeholder="breed" name="breed" required>
+
+
+            <label for="energy" class="title"><b>Energy</b></label>
+            <input id="energy" class ="input" type="integer" placeholder="Enter 1-10" name="energy" required>
+
+            <label for="allergies" class="title"><b>Allergies</b></label>
+            <input id="allergies" class ="input" type="text" placeholder="allergies" name="allergies" required>
+
+            <label for="medications" class="title"><b>Medications</b></label>
+            <input id="medications" class ="input" type="text" placeholder="medications" name="medications" required>
+
+            <label for="other" class="title"><b>Other</b></label>
+            <input id="other" class ="input" type="text" placeholder="Tell us something" name="other" required>
+      
+            <div class="clearfix">
+              <button type="submit" class="signupbtn">Submit</button>
+            </div>
+          </div>
+        </form>
+                
+              		
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pets">
+        <div class="card-body pets">
+          <div class="row">
+            <div class = "column">
+              Pets: 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card logout">
+        <div class="card-body logout">
+          <a href="/users/logout" class="btn btn-primary">Logout</a>
+        </div>
+      </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
