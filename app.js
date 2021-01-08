@@ -11,13 +11,21 @@ var urlencodedParser = bodyParser.urlencoded({ extended: true })
  
 const app = express();
 const PORT = process.env.PORT || 3000;
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
+// var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 
 app.engine('hbs', exphbs());
 app.set('view engine', 'hbs');
+
+var config =require('../config');
+const connection = mysql.createConnection({
+  host: config.db.host,
+  user: config.db.user,
+  password: config.db.password,
+  database: config.db.database
+});
  
 // app.get('/', function (req, res) {
 //     res.render('login');
