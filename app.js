@@ -19,7 +19,7 @@ app.use(express.static(__dirname + '/public'));
 app.engine('hbs', exphbs());
 app.set('view engine', 'hbs');
 
-var config =require('../config');
+var config = require('./config');
 const connection = mysql.createConnection({
   host: config.db.host,
   user: config.db.user,
