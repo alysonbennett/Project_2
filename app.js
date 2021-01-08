@@ -19,13 +19,13 @@ app.use(express.static(__dirname + '/public'));
 app.engine('hbs', exphbs());
 app.set('view engine', 'hbs');
 
-var config = require('./config');
-const connection = mysql.createConnection({
-  host: config.db.host,
-  user: config.db.user,
-  password: config.db.password,
-  database: config.db.database
-});
+// var config = require('./config');
+// const connection = mysql.createConnection({
+//   host: config.db.host,
+//   user: config.db.user,
+//   password: config.db.password,
+//   database: config.db.database
+// });
  
 // app.get('/', function (req, res) {
 //     res.render('login');
